@@ -8,10 +8,11 @@ export const Botao = styled.button`
     color: ${branco};
     font-size: .8rem;
     font-weight: 600;
-    padding: 12px 16px;
+    padding: ${props => props.login ? "12px 34px" : "12px 16px"};
 
     @media screen and (min-width: 1024px){
         font-size: 1rem;
-        padding: 16px;
+        padding: ${props => props.login ? "20px 189px" : "16px"};
+
     }
 `

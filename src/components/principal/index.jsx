@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import Home from "../home";
+import Home from "../home"
 import StarWars from "../star-wars";
 import Consoles from "../consoles";
-import Diversos from "../diversos/inedex";
+import Diversos from "../diversos";
 
 
 const SecaoPrincipal = styled.main`

@@ -5,6 +5,7 @@ import logo_alura_geek from "../../assets/img/logo/Logo.svg"
 import FaleConosco from "../faleConosco";
 import Menu from "../menu";
 import { dadosMenu } from "../../dados/menu-rodape.js"
+import {Link} from "react-router-dom"
 
 
 
@@ -79,7 +80,7 @@ const Institucional = () => {
             <Container>
                 <ContainerConteudo>
                     <PosicaoLogo>
-                        <Logo src={logo_alura_geek} />
+                        <Link to="/"><Logo src={logo_alura_geek} /></Link>
                     </PosicaoLogo>
                     <PosicaoMenu>
                         <Menu dadosMenu={dadosMenu} />
