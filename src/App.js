@@ -10,7 +10,9 @@ function App() {
       <GlobalStyle />
       <BrowserRouter>
         <Cabecalho />
-        <Router />
+        <main>
+          <Router />
+        </main>
         <RodaPe />
       </BrowserRouter>
     </>
