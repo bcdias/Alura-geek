@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { azulConteudo, preto } from "./UI/variaveis";
+import { azulConteudo } from "./UI/variaveis";
 
 export const GlobalStyle = createGlobalStyle`
     *{

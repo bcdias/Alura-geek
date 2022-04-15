@@ -10,7 +10,10 @@ const Diversos = () => {
         <Secao>
             <Container>
                 <CabecalhoSecao titulo="Diversos"></CabecalhoSecao>
-                <ListaCards dados={dadosDiversos} />
+                <ListaCards 
+                dados={dadosDiversos} 
+                secao={"dadosDiversos"}
+                />
             </Container>
         </Secao>
     )

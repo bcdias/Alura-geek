@@ -10,7 +10,10 @@ const StarWars = () => {
         <Secao>
             <Container>
                 <CabecalhoSecao titulo="Star Wars"></CabecalhoSecao>
-                <ListaCards dados={dadosStarWars} />
+                <ListaCards 
+                dados={dadosStarWars}
+                secao={"dadosStarWars"} 
+                />
             </Container>
         </Secao>
     )

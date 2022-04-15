@@ -44,10 +44,12 @@ const ListaCards = (props) => {
                 return(
                 <Itens key={index}>
                     <Card
+                        secao={props.secao}
                         img={dados.img}
                         produto={dados.produto}
                         valor={dados.valor}
                         linkProduto={dados.link}
+                        id={index}
                     />
                 </Itens>
                 )

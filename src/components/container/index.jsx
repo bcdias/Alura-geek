@@ -9,12 +9,9 @@ const Container = styled.div`
 
 
     @media screen and (min-width: 768px){
-        padding-inline: 32px;
+        padding: ${props => props.produtos ? "0 16px" : "16px 32px"};
     } 
 
-    @media screen and (min-width: 1024px){
-        padding-inline: 32px;
-    }
     @media screen and (min-width: 1440px){
         padding-inline: 152px;
     }

@@ -1,37 +1,14 @@
-import { PersonWorkspace } from "react-bootstrap-icons";
-import styled from "styled-components";
-import { preto } from "../UI/variaveis";
+import { CardContainer, ImgCard, TituloProduto, ValordoProduto, LinkProduto } from "../componentesCardsProdutos"
+import { azulConteudo } from "../UI/variaveis"
+import styled from "styled-components"
+import { Link } from "react-router-dom"
 
-const CardContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    width 100%;
-`
 
-const ImgCard = styled.img`
-    height: 174px;
-    margin-bottom: 8px;
-    object-fit: cover;
-    width:100%;
-`
-const TituloProduto = styled.h3`
-    color: ${preto};
-    font-size:.9rem;
-    font-weight: 500;
-    margin-bottom: 8px
-`
-
-const ValordoProduto = styled.p`
-    color: ${preto};
-    font-size:1.125rem;
-    font-weight: 700;
-    margin-bottom: 8px
-`
-const LinkProduto = styled.a`
+const BotaoLogin = styled(Link)`
+    border-color:${azulConteudo};
     font-weight: 700;
     font-size:.9rem;
 `
-
 
 const Card = (props) => {
     return (
@@ -39,7 +16,7 @@ const Card = (props) => {
             <ImgCard src={props.img} alt="" />
             <TituloProduto>{props.produto}</TituloProduto>
             <ValordoProduto>{props.valor}</ValordoProduto>
-            <LinkProduto href={props.linkProduto}>Ver produto</LinkProduto>
+            <BotaoLogin to={`/produtos/${props.secao}/${props.id}`} >Ver produto </BotaoLogin>
         </CardContainer>
     )
 }
