@@ -4,19 +4,27 @@ import styled from "styled-components"
 import { useParams } from "react-router-dom"
 import { dadosStarWars, dadosConsoles, dadosDiversos } from "../../dados/dados-cards"
 import ListaCards from "../listaCards"
+import TituloSecao from "../tituloSecao"
 
 
 const ProdutoContainer = styled.div`
     display: flex;
     flex-direction: column;
+    
 
     @media screen and (min-width: 768px){
         flex-direction: row;
-        padding-left: 32px;
-        margin: 32px 0;
+        height:274px;
+        padding: 32px;
+    }
+    @media screen and (min-width: 1440px){
+        flex-direction: row;
+        height:403px;
+        padding: 32px 152px;
     }
 
 `
+
 
 
 const PaginaProdutos = () => {
@@ -27,7 +35,7 @@ const PaginaProdutos = () => {
         dadosDiversos: dadosDiversos
     }
     return (
-        <Secao>
+        <Secao bgCinza>
             <ProdutoContainer>
                 <ImgCard produtos src={dados[secao][id].img} />
                 <Container produtos>
@@ -37,6 +45,7 @@ const PaginaProdutos = () => {
                 </Container>
             </ProdutoContainer>
             <Container>
+                <TituloSecao>Produtos similares</TituloSecao>
                 <ListaCards dados={dados[secao]} secao={secao} />
             </Container>
         </Secao>

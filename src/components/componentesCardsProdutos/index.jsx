@@ -14,10 +14,12 @@ object-fit: cover;
 width:100%;
 
 @media screen and (min-width: 768px){
-    height: ${props => props.produtos ? "157px" : "174px"};
-    width: ${props => props.produtos ? "254px" : "100%"};
+    height: ${props => props.produtos ? "100%" : "174px"};
+    width: ${props => props.produtos ? "50%" : "100%"};
 
 }
+
+
 `
 export const TituloProduto = styled.h3`
 color: ${preto};

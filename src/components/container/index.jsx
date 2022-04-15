@@ -13,7 +13,11 @@ const Container = styled.div`
     } 
 
     @media screen and (min-width: 1440px){
-        padding-inline: 152px;
+        padding-inline: ${props => props.produtos ? "16px" : "152px"};
+        width: ${props => props.produtos ? "50%" : "100%"};
+        display: ${props => props.produtos ? "flex" : "block"};
+        flex-direction: ${props => props.produtos ? "column" : "none"};
+        justify-content: ${props => props.produtos ? "center" : "none"};
     }
 `
 
