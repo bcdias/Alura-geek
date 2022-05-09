@@ -16,5 +16,5 @@ Ao término do projeto o usuário deverá ser capaz de:
 
 ## Implementado até o momento
 * Rota para página de login
-* Rota para página principla
+* Rota para página principal
 * Rota para ver descrição do produto
